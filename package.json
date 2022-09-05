@@ -1,0 +1,11 @@
+{
+  "scripts":{
+    "csharpLex" : "antlr4ts -visitor ./CSHARP/QSharpLexer.g4",
+    "csharpPar" : "antlr4ts -visitor ./CSHARP/QSharpParser.g4",
+    "csharp" : "yarn csharpLex && yarn csharpPar"
+  },
+  "dependencies": {
+    "antlr4ts": "^0.5.0-alpha.4",
+    "antlr4ts-cli": "^0.5.0-alpha.4"
+  }
+}
